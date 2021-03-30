@@ -52,7 +52,13 @@ body{
 
 header{
     height:60vh;
-    background:rgb(43, 41, 41);
+    background-image:url('../images/0003.jfif'), url('../images/0004.png');
+    background-position: left, right;
+    background-size:200px, contain;
+    background-repeat: no-repeat;
+    background-color:rgb(43, 41, 41);
+    background-blend-mode: lighten;
+   
     .wrap{
         nav{
             display: none;
