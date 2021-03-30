@@ -1,8 +1,10 @@
 $fore-color :#8624c3;
 $ben-color:#f30386;
+
 @mixin align($margin-top){
      margin:$margin-top auto;
 }
+
 @mixin buttons($color){
     border-radius: 4px;
     border: 1px solid #bbb;
@@ -22,35 +24,51 @@ $ben-color:#f30386;
     white-space: nowrap;
     background: $color;
 }
+
 *{
     box-sizing: border-box;
     margin: 0px;
     padding:0px;
 }
+
 body{
     font-family: 'Raleway', sans-serif;
     overflow-x: hidden;
     .svgHome{
-        margin-top:-2px;
        position: relative;
-       left:0%;
-       right:0%;
+       left:0px;
+       top:20px;
        width:100%;
        z-index: -5;
     }
 }
+.menu{
+    width:100%;
+    height:15%;
+    background:whitesmoke;
+   display:none;
+    ul{
+        display:flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding:5px;
+        li{
+            list-style-type: none;
+        }
+    }
+}
+
 .divette{
     background:rgb(36, 36, 36);
     width:100%;
-    height:1%;
+    height:2%;
     position:fixed;
     top:0px;
 }
+
 header{
-    height:70vh;
-    background-image:url('../images/0003.jfif'), url('../images/0004.png');
-    background-position: left, right;
-    background-size:200px, 200px;
+    height:auto;
+    background-size:200px;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background:linear-gradient(bottom,$fore-color, $ben-color);
@@ -76,7 +94,8 @@ header{
         .menu-bar{
             i{
                 font-size:1.3em;
-                color:white;
+                font-weight:700;
+                color:rgb(17, 17, 17);
             }
            
         }
@@ -84,7 +103,7 @@ header{
         align-content: center;
         justify-content: space-between;
         width:95%;
-        padding:25px 0px;
+        padding:20px 0px;
         @include align(0px)
     }
     .start{

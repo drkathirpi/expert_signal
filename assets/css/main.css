@@ -11,27 +11,48 @@ body {
 }
 
 body .svgHome {
-  margin-top: -2px;
   position: relative;
-  left: 0%;
-  right: 0%;
+  left: 0px;
+  top: 20px;
   width: 100%;
   z-index: -5;
+}
+
+.menu {
+  width: 100%;
+  height: 15%;
+  background: whitesmoke;
+  display: none;
+}
+
+.menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+}
+
+.menu ul li {
+  list-style-type: none;
 }
 
 .divette {
   background: #242424;
   width: 100%;
-  height: 1%;
+  height: 2%;
   position: fixed;
   top: 0px;
 }
 
 header {
-  height: 70vh;
-  background-image: url("../images/0003.jfif"), url("../images/0004.png");
-  background-position: left, right;
-  background-size: 200px, 200px;
+  height: auto;
+  background-size: 200px;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background: -webkit-gradient(linear, left bottom, left top, from(#8624c3), to(#f30386));
@@ -48,7 +69,7 @@ header .wrap {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 95%;
-  padding: 25px 0px;
+  padding: 20px 0px;
   margin: 0px auto;
 }
 
@@ -66,7 +87,8 @@ header .wrap .logo h3 span:nth-child(2) {
 
 header .wrap .menu-bar i {
   font-size: 1.3em;
-  color: white;
+  font-weight: 700;
+  color: #111111;
 }
 
 header .start .beginTxt {
