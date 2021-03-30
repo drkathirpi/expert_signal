@@ -7,13 +7,15 @@
 
 body {
   font-family: 'Raleway', sans-serif;
+  overflow-x: hidden;
 }
 
 body .svgHome {
   margin-top: -5px;
   position: relative;
-  left: -4%;
-  width: 110%;
+  left: 0%;
+  right: 0%;
+  width: 100%;
   z-index: -10;
 }
 
@@ -61,8 +63,8 @@ header .start .beginTxt {
 
 header .start .beginTxt h2 {
   font-size: 1.7em;
-  color: #2e2b2b;
-  text-shadow: 1px 3px 2px black;
+  color: #575656;
+  text-shadow: 4px 1px 1px black;
 }
 
 header .start .beginTxt h2 span {
@@ -96,10 +98,7 @@ header .start .beginTxt button {
 
 header .start .image {
   width: 70%;
-  position: fixed;
-  left: 15%;
-  top: 30%;
-  margin: 10px auto;
+  margin: -25% auto;
 }
 
 header .start .image img {
