@@ -37,7 +37,7 @@ body{
     .svgHome{
        position: relative;
        left:0px;
-       margin-top:9%;
+       top:-1px;
        width:100%;
        z-index: -5;
     }
@@ -54,6 +54,7 @@ body{
         padding:5px;
         li{
             list-style-type: none;
+            padding:10px 0px;
         }
     }
 }
@@ -67,7 +68,7 @@ body{
 }
 
 header{
-    height:auto;
+    height:70vh;
     background-size:200px;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -125,7 +126,7 @@ header{
          
         }
         .image{
-            width:100%;
+            width:80%;
             margin:10px;
             @include align(-10%);
             img{

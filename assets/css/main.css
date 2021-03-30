@@ -13,7 +13,7 @@ body {
 body .svgHome {
   position: relative;
   left: 0px;
-  margin-top: 9%;
+  top: -1px;
   width: 100%;
   z-index: -5;
 }
@@ -40,6 +40,7 @@ body .svgHome {
 
 .menu ul li {
   list-style-type: none;
+  padding: 10px 0px;
 }
 
 .divette {
@@ -51,7 +52,7 @@ body .svgHome {
 }
 
 header {
-  height: auto;
+  height: 70vh;
   background-size: 200px;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -126,7 +127,7 @@ header .start .beginTxt button {
 }
 
 header .start .image {
-  width: 100%;
+  width: 80%;
   margin: 10px;
   margin: -10% auto;
 }
