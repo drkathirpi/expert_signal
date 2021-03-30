@@ -138,27 +138,32 @@ header .start .image img {
   width: 100%;
 }
 
-.begin {
-  margin-top: 10%;
-  padding: 20px 0px;
+main {
+  margin-top: 12%;
 }
 
-.begin .wrap {
+main .begin {
+  margin-top: 5%;
+  padding: 10px 0px;
+}
+
+main .begin .wrap {
+  text-align: center;
   width: 95%;
   padding: 10px 0px;
   margin: 10px auto;
 }
 
-.begin .wrap .text_h3 {
-  font-size: 1.4em;
-  text-align: center;
+main .begin .wrap .text_h3 {
+  font-size: 1.2em;
 }
 
-.begin .wrap .image_up {
+main .begin .wrap .image_up {
   width: 100%;
+  margin-left: 10px;
 }
 
-.begin .wrap .image_up img {
+main .begin .wrap .image_up img {
   width: 100%;
 }
 /*# sourceMappingURL=main.css.map */

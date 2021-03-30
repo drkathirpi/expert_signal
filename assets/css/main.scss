@@ -138,21 +138,25 @@ header{
         }
     }  
 }
-.begin{
-    margin-top:10%;
-    padding:20px 0px;
-    .wrap{
-        width:95%;
+main{
+    margin-top:12%;
+    .begin{
+        margin-top:5%;
         padding:10px 0px;
-        @include align(10px);
-        .text_h3{
-            font-size:1.4em;
+        .wrap{
             text-align: center;
-        }
-        .image_up{
-            width:100%;
-            img{
+            width:95%;
+            padding:10px 0px;
+            @include align(10px);
+            .text_h3{
+                font-size:1.2em;
+            }
+            .image_up{
                 width:100%;
+                margin-left:10px;
+                img{
+                    width:100%;
+                }
             }
         }
     }
