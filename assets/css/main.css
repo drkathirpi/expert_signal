@@ -110,7 +110,8 @@ header .start .beginTxt button {
 
 header .start .image {
   width: 90%;
-  margin: -25% auto;
+  margin: 10px;
+  margin: -30% auto;
 }
 
 header .start .image img {

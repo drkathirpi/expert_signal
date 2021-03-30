@@ -109,8 +109,8 @@ header{
         }
         .image{
             width:90%;
-            
-            @include align(-25%);
+            margin:10px;
+            @include align(-30%);
             img{
                 width:100%;
             }
