@@ -65,10 +65,8 @@ header .start .beginTxt h2 {
 }
 
 header .start .beginTxt h2 span {
-  color: rgba(46, 43, 43, 0.755);
-  -webkit-animation: bright 1s ease-in-out infinite;
-          animation: bright 1s ease-in-out infinite;
-  text-shadow: -2px -3px #e5b8f5;
+  font-style: italic;
+  color: white;
 }
 
 header .start .beginTxt button {
