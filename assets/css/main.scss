@@ -44,8 +44,9 @@ body{
 }
 .menu{
     width:100%;
-    height:15%;
-    background:whitesmoke;
+    height:10%;
+    color: whitesmoke;
+    background:rgb(36, 36, 36);
    display:none;
     ul{
         display:flex;
@@ -65,6 +66,7 @@ body{
     height:2%;
     position:fixed;
     top:0px;
+    z-index:30;
 }
 
 header{
@@ -73,6 +75,7 @@ header{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background:linear-gradient(bottom,$fore-color, $ben-color);
+
    
     .wrap{
         nav{
@@ -96,7 +99,7 @@ header{
             i{
                 font-size:1.3em;
                 font-weight:700;
-                color:rgb(17, 17, 17);
+                color:rgb(238, 238, 238);
             }
            
         }
@@ -133,6 +136,24 @@ header{
                 width:100%;
             }
         }
+    }  
+}
+.begin{
+    margin-top:10%;
+    padding:20px 0px;
+    .wrap{
+        width:95%;
+        padding:10px 0px;
+        @include align(10px);
+        .text_h3{
+            font-size:1.4em;
+            text-align: center;
+        }
+        .image_up{
+            width:100%;
+            img{
+                width:100%;
+            }
+        }
     }
-    
 }
