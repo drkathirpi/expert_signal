@@ -12,8 +12,8 @@ body {
 body .svgHome {
   position: fixed;
   top: 59%;
-  left: -10%;
-  width: 130%;
+  left: 0%;
+  width: 100%;
 }
 
 header {
