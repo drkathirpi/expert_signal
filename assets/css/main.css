@@ -13,8 +13,8 @@
   top: 0px;
   left: 0px;
   border: none;
-  background: -webkit-gradient(linear, left top, right top, from(#f384c1), to(#cc8df3));
-  background: linear-gradient(left, #f384c1, #cc8df3);
+  background: -webkit-gradient(linear, left top, right top, from(#ff6abc), to(#c367fd));
+  background: linear-gradient(left, #ff6abc, #c367fd);
 }
 
 body {
@@ -23,7 +23,7 @@ body {
 }
 
 body .svgHome {
-  margin-top: -5px;
+  margin-top: -2px;
   position: relative;
   left: 0%;
   right: 0%;
@@ -32,7 +32,7 @@ body .svgHome {
 }
 
 header {
-  height: 60vh;
+  height: 65vh;
   background-image: url("../images/0003.jfif"), url("../images/0004.png");
   background-position: left, right;
   background-size: 200px, 200px;
@@ -126,11 +126,11 @@ header .start .beginTxt h2 span {
 }
 
 header .start .beginTxt h2 span:nth-child(1) {
-  color: #f384c1;
+  color: #ff6abc;
 }
 
 header .start .beginTxt h2 span:nth-child(2) {
-  color: #cc8df3;
+  color: #c367fd;
 }
 
 header .start .beginTxt button {

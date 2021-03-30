@@ -1,5 +1,5 @@
-$fore-color :#f384c1;
-$ben-color:#cc8df3;
+$fore-color :#ff6abc;
+$ben-color:#c367fd;
 @mixin align($margin-top){
      margin:$margin-top auto;
 }
@@ -41,7 +41,7 @@ body{
     font-family: 'Raleway', sans-serif;
     overflow-x: hidden;
     .svgHome{
-        margin-top:-5px;
+        margin-top:-2px;
        position: relative;
        left:0%;
        right:0%;
@@ -51,7 +51,7 @@ body{
 }
 
 header{
-    height:60vh;
+    height:65vh;
     background-image:url('../images/0003.jfif'), url('../images/0004.png');
     background-position: left, right;
     background-size:200px, 200px;
