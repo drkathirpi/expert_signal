@@ -7,10 +7,11 @@
 body{
     font-family: 'Raleway', sans-serif;
     .svgHome{
-        position:fixed;
-        top:54%;
-        left:-10%;
-        width:130%;
+        margin-top:-5px;
+       position: relative;
+       left:-4%;
+       width:110%;
+       z-index: -10;
     }
 }
 $fore-color :#f30386;
@@ -98,7 +99,7 @@ header{
             width:70%;
             position: fixed;
             left:15%;
-            top:33%;
+            top:30%;
             @include align(10px);
             img{
                 width:100%;
