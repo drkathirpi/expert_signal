@@ -72,27 +72,39 @@ header{
         padding:20px 0px;
         @include align(0px)
     }
-    .beginTxt{
-        width:95%;
-        @include align(30px);
-        text-align: center;
-        h2{
-            font-size:1.7em;
-            color:rgb(46, 43, 43);
-            text-shadow:  1px 3px 2px black;
-            span{
-              
-                animation:bright 1s ease-in-out infinite;
-                text-shadow:2-2px -2px 0px #e5b8f5;
+    .start{
+        .beginTxt{
+            width:95%;
+            @include align(10%);
+            text-align: center;
+            h2{
+                font-size:1.7em;
+                color:rgb(46, 43, 43);
+                text-shadow:  1px 3px 2px black;
+                span{
+                  
+                    animation:bright 1s ease-in-out infinite;
+                    text-shadow:2-2px -2px 0px #e5b8f5;
+                }
+                
             }
-            
+            button{
+                @include buttons(linear-gradient($ben-color));
+               margin:10% 0px;
+               color:white;
+            }
+         
         }
-        button{
-            @include buttons(linear-gradient($ben-color));
-           margin:10px 0px;
-           color:white;
+        .image{
+            width:70%;
+            position: fixed;
+            left:15%;
+            top:35%;
+            @include align(10px);
+            img{
+                width:100%;
+            }
         }
-     
     }
     
 }
