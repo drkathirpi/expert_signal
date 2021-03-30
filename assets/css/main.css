@@ -38,7 +38,7 @@ header {
   background-size: 200px, 200px;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-color: #2b2929;
+  background-color: black;
   background-blend-mode: lighten;
 }
 
@@ -74,7 +74,7 @@ header .wrap .menu-bar i {
 }
 
 header .start .beginTxt {
-  width: 95%;
+  width: 98%;
   margin: 10% auto;
   text-align: center;
 }
@@ -110,7 +110,7 @@ header .start .beginTxt button {
 header .start .image {
   width: 100%;
   margin: 10px;
-  margin: -29% auto;
+  margin: -20% auto;
 }
 
 header .start .image img {
