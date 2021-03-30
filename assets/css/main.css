@@ -1,0 +1,90 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+body .svgHome {
+  position: fixed;
+  top: 59%;
+  left: -10%;
+  width: 130%;
+}
+
+header {
+  height: 60vh;
+  background: #242323;
+}
+
+header .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 95%;
+  padding: 20px 0px;
+  margin: 0px auto;
+}
+
+header .wrap nav {
+  display: none;
+}
+
+header .wrap .logo h3 span:nth-child(1) {
+  color: #f30386;
+}
+
+header .wrap .logo h3 span:nth-child(2) {
+  color: white;
+}
+
+header .wrap .menu-bar i {
+  font-size: 1.3em;
+  color: white;
+}
+
+header .beginTxt {
+  width: 95%;
+  margin: 30px auto;
+  text-align: center;
+}
+
+header .beginTxt h2 {
+  font-size: 1.7em;
+  color: #2e2b2b;
+  text-shadow: 1px 3px 2px black;
+}
+
+header .beginTxt button {
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #555;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background: -webkit-gradient(linear, left top, left bottom, from(#8624c3));
+  background: linear-gradient(#8624c3);
+  margin: 10px 0px;
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */
