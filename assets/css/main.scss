@@ -46,13 +46,12 @@ body{
        left:0%;
        right:0%;
        width:100%;
-       z-index: -10;
+       z-index: -5;
     }
 }
 
 header{
     height:60vh;
-    // background:linear-gradient(bottom, #8624c3,#f30386);
     background:rgb(43, 41, 41);
     .wrap{
         nav{
@@ -62,7 +61,8 @@ header{
             h3{
                span{
                    &:nth-child(1){
-                       color:$fore-color;
+                    //    color:$fore-color;
+                    color:greenyellow;
                       
                    }
                    &:nth-child(2){
@@ -85,6 +85,38 @@ header{
         padding:25px 0px;
         @include align(0px)
     }
+    .floatingBG{
+        img{
+            width:2em;
+            &:nth-child(1){
+             position:absolute;
+             z-index:-5;
+             top:8%;
+             left:10%;
+             color:greenyellow;
+            }
+            &:nth-child(2){
+                position:absolute;
+                z-index:-5;
+            }
+            &:nth-child(3){
+                position:absolute;
+                z-index:-5;
+            }
+            &:nth-child(4){
+                position:absolute;
+                z-index:-5;
+            }
+            &:nth-child(5){
+                position:absolute;
+                z-index:-5;
+            }
+            &:nth-child(6){
+                position: absolute;
+                z-index:-5;
+            }
+        }
+    }
     .start{
         .beginTxt{
             width:95%;
@@ -92,8 +124,8 @@ header{
             text-align: center;
             h2{
                 font-size:1.7em;
-                color:rgb(87, 86, 86);
-                text-shadow:  4px 1px 1px black;
+                color:rgb(240, 231, 231);
+             
                 span{
                     font-style: italic;
                  color:whitesmoke;
@@ -101,16 +133,16 @@ header{
                 
             }
             button{
-                @include buttons(linear-gradient($ben-color));
+                @include buttons(rgb(37, 219, 37));
                margin:10% 0px;
                color:white;
             }
          
         }
         .image{
-            width:90%;
+            width:100%;
             margin:10px;
-            @include align(-30%);
+            @include align(-20%);
             img{
                 width:100%;
             }
