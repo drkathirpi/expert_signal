@@ -73,43 +73,6 @@ header .wrap .menu-bar i {
   color: white;
 }
 
-header .floatingBG img {
-  width: 2em;
-}
-
-header .floatingBG img:nth-child(1) {
-  position: absolute;
-  z-index: -5;
-  top: 8%;
-  left: 10%;
-  color: greenyellow;
-}
-
-header .floatingBG img:nth-child(2) {
-  position: absolute;
-  z-index: -5;
-}
-
-header .floatingBG img:nth-child(3) {
-  position: absolute;
-  z-index: -5;
-}
-
-header .floatingBG img:nth-child(4) {
-  position: absolute;
-  z-index: -5;
-}
-
-header .floatingBG img:nth-child(5) {
-  position: absolute;
-  z-index: -5;
-}
-
-header .floatingBG img:nth-child(6) {
-  position: absolute;
-  z-index: -5;
-}
-
 header .start .beginTxt {
   width: 95%;
   margin: 10% auto;
@@ -119,18 +82,6 @@ header .start .beginTxt {
 header .start .beginTxt h2 {
   font-size: 1.7em;
   color: #f0e7e7;
-}
-
-header .start .beginTxt h2 span {
-  font-style: italic;
-}
-
-header .start .beginTxt h2 span:nth-child(1) {
-  color: #ff6abc;
-}
-
-header .start .beginTxt h2 span:nth-child(2) {
-  color: #c367fd;
 }
 
 header .start .beginTxt button {

@@ -92,38 +92,6 @@ header{
         padding:25px 0px;
         @include align(0px)
     }
-    .floatingBG{
-        img{
-            width:2em;
-            &:nth-child(1){
-             position:absolute;
-             z-index:-5;
-             top:8%;
-             left:10%;
-             color:greenyellow;
-            }
-            &:nth-child(2){
-                position:absolute;
-                z-index:-5;
-            }
-            &:nth-child(3){
-                position:absolute;
-                z-index:-5;
-            }
-            &:nth-child(4){
-                position:absolute;
-                z-index:-5;
-            }
-            &:nth-child(5){
-                position:absolute;
-                z-index:-5;
-            }
-            &:nth-child(6){
-                position: absolute;
-                z-index:-5;
-            }
-        }
-    }
     .start{
         .beginTxt{
             width:95%;
@@ -132,16 +100,6 @@ header{
             h2{
                 font-size:1.7em;
                 color:rgb(240, 231, 231);
-             
-                span{
-                    font-style: italic;
-                    &:nth-child(1){
-                        color:$fore-color;
-                    }
-                    &:nth-child(2){
-                        color: $ben-color;
-                    }
-                }
                 
             }
             button{
