@@ -51,7 +51,7 @@ body{
 }
 
 header{
-    height:55vh;
+    height:60vh;
     // background:linear-gradient(bottom, #8624c3,#f30386);
     background:rgb(43, 41, 41);
     .wrap{
@@ -108,7 +108,7 @@ header{
          
         }
         .image{
-            width:80%;
+            width:90%;
             
             @include align(-25%);
             img{
