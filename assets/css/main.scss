@@ -128,7 +128,12 @@ header{
              
                 span{
                     font-style: italic;
-                 color:whitesmoke;
+                    &:nth-child(1){
+                        color:$fore-color;
+                    }
+                    &:nth-child(2){
+                        color: $ben-color;
+                    }
                 }
                 
             }
@@ -142,7 +147,7 @@ header{
         .image{
             width:100%;
             margin:10px;
-            @include align(-20%);
+            @include align(-29%);
             img{
                 width:100%;
             }

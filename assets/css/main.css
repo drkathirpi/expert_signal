@@ -117,7 +117,14 @@ header .start .beginTxt h2 {
 
 header .start .beginTxt h2 span {
   font-style: italic;
-  color: whitesmoke;
+}
+
+header .start .beginTxt h2 span:nth-child(1) {
+  color: #f30386;
+}
+
+header .start .beginTxt h2 span:nth-child(2) {
+  color: #8624c3;
 }
 
 header .start .beginTxt button {
@@ -146,7 +153,7 @@ header .start .beginTxt button {
 header .start .image {
   width: 100%;
   margin: 10px;
-  margin: -20% auto;
+  margin: -29% auto;
 }
 
 header .start .image img {
