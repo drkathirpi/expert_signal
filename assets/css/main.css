@@ -16,12 +16,6 @@ body .svgHome {
   width: 130%;
 }
 
-.coin_3d {
-  position: fixed;
-  top: 60%;
-  left: 10%;
-}
-
 header {
   height: 60vh;
   background: #242323;
@@ -68,6 +62,12 @@ header .beginTxt h2 {
   font-size: 1.7em;
   color: #2e2b2b;
   text-shadow: 1px 3px 2px black;
+}
+
+header .beginTxt h2 span {
+  -webkit-animation: bright 1s ease-in-out infinite;
+          animation: bright 1s ease-in-out infinite;
+  text-shadow: -2px 0px #e5b8f5;
 }
 
 header .beginTxt button {
