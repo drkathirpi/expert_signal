@@ -37,6 +37,11 @@ $ben-color:#8624c3;
     white-space: nowrap;
     background: $color;
 }
+.coin_3d{
+    position:fixed;
+    top:60%;
+    left:10%;
+}
 header{
     height:60vh;
     // background:linear-gradient(bottom, #8624c3,#f30386);
@@ -83,7 +88,7 @@ header{
             
         }
         button{
-            @include buttons(linear-gradient($fore-color));
+            @include buttons(linear-gradient($ben-color));
            margin:10px 0px;
            color:white;
         }
