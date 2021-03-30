@@ -36,6 +36,7 @@ header {
   background-image: url("../images/0003.jfif"), url("../images/0004.png");
   background-position: left, right;
   background-size: 200px, 200px;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-color: #2b2929;
   background-blend-mode: lighten;
