@@ -13,8 +13,8 @@
   top: 0px;
   left: 0px;
   border: none;
-  background: -webkit-gradient(linear, left top, right top, from(#f30386), to(#b756f3));
-  background: linear-gradient(left, #f30386, #b756f3);
+  background: -webkit-gradient(linear, left top, right top, from(#f384c1), to(#cc8df3));
+  background: linear-gradient(left, #f384c1, #cc8df3);
 }
 
 body {
@@ -126,11 +126,11 @@ header .start .beginTxt h2 span {
 }
 
 header .start .beginTxt h2 span:nth-child(1) {
-  color: #f30386;
+  color: #f384c1;
 }
 
 header .start .beginTxt h2 span:nth-child(2) {
-  color: #b756f3;
+  color: #cc8df3;
 }
 
 header .start .beginTxt button {
