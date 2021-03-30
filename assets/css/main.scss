@@ -8,7 +8,7 @@ body{
     font-family: 'Raleway', sans-serif;
     .svgHome{
         position:fixed;
-        top:40%;
+        top:54%;
         left:-10%;
         width:130%;
     }
@@ -38,7 +38,7 @@ $ben-color:#8624c3;
     background: $color;
 }
 header{
-    height:65vh;
+    height:55vh;
     // background:linear-gradient(bottom, #8624c3,#f30386);
     background:rgb(36, 35, 35);
     .wrap{
@@ -98,7 +98,7 @@ header{
             width:70%;
             position: fixed;
             left:15%;
-            top:40%;
+            top:33%;
             @include align(10px);
             img{
                 width:100%;

@@ -11,13 +11,13 @@ body {
 
 body .svgHome {
   position: fixed;
-  top: 40%;
+  top: 54%;
   left: -10%;
   width: 130%;
 }
 
 header {
-  height: 65vh;
+  height: 55vh;
   background: #242323;
 }
 
@@ -97,7 +97,7 @@ header .start .image {
   width: 70%;
   position: fixed;
   left: 15%;
-  top: 40%;
+  top: 33%;
   margin: 10px auto;
 }
 
