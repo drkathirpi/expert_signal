@@ -187,8 +187,22 @@ header .start .image img {
   width: 100%;
 }
 
+.colored_text {
+  color: #8624c3;
+}
+
+.colored_text1 {
+  color: #9aff03;
+}
+
 #about {
   width: 100%;
+}
+
+#about h2 {
+  position: relative;
+  top: 20px;
+  color: #8624c3;
 }
 
 #about .wrap {
@@ -197,7 +211,7 @@ header .start .image img {
           box-shadow: 1px 0px 15px 2px #c1bebe;
   padding: 20px;
   width: 95%;
-  margin: 5px auto;
+  margin: 10px auto;
 }
 
 #about .wrap .text_p {
@@ -234,7 +248,12 @@ header .start .image img {
   margin: 15px 0px;
 }
 
+#about .wrap .read_more ul li {
+  margin: 8px 0px;
+  padding: 0 3px;
+}
+
 #about .wrap p {
-  line-height: 22px;
+  line-height: 23px;
 }
 /*# sourceMappingURL=main.css.map */

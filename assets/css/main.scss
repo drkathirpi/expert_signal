@@ -169,14 +169,25 @@ header{
         }
     }
 }
+.colored_text{
+    color:$fore-color;
+}
+.colored_text1{
+    color:rgb(154, 255, 3);
+}
 #about{
     width:100%;
+    h2{
+        position:relative;
+        top:20px;
+        color:$fore-color;
+    }
     .wrap{
         border-radius: 10px;
         box-shadow: 1px 0px 15px 2px #c1bebe;
         padding:20px;
         width:95%;
-        @include align(5px);
+        @include align(10px);
         .text_p{
             margin:10px 0px;
         }
@@ -200,9 +211,15 @@ header{
             p{
                 margin:15px 0px;
             }
+            ul{
+                li{
+                    margin:8px 0px;
+                    padding: 0 3px;
+                }
+            }
         }
         p{
-            line-height: 22px;
+            line-height: 23px;
         }
     }
 }
