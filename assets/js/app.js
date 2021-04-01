@@ -27,6 +27,10 @@ $(document).ready(function(){
            document.querySelector('.menu-bar i').className ="ri-menu-line";
         }
     })
+
+    $('#readmebtn').click(()=>{
+         $('.read_more').slideToggle();
+    })
   });
 
 
