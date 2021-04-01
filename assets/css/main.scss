@@ -4,7 +4,6 @@ $ben-color:#f30386;
 @mixin align($margin-top){
      margin:$margin-top auto;
 }
-
 @mixin buttons($color){
     border-radius: 4px;
     border: 1px solid #bbb;
@@ -44,39 +43,40 @@ body{
 }
 .menu{
     width:100%;
-    height:10%;
+    position:fixed;
+    z-index:19;
+    justify-content: center;
+
+    top:10%;
     color: whitesmoke;
-    background:rgb(36, 36, 36);
-   display:none;
+    background:rgb(32, 31, 49);
+    display: none;
     ul{
         display:flex;
+        flex-direction: column;
         justify-content: space-evenly;
-        align-items: center;
-        padding:5px;
+        padding:10px;
         li{
             list-style-type: none;
             padding:10px 0px;
         }
     }
 }
-
 .divette{
-    background:rgb(244, 244, 252);
+    background:rgb(195, 195, 231);
     width:100%;
-    height:1.3%;
+    height:1%;
     position:fixed;
     top:0px;
     z-index:30;
 }
-
 header{
     height:70vh;
+    width:100%;
     background-size:200px;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background:linear-gradient(bottom,$fore-color, $ben-color);
-
-   
     .wrap{
         nav{
             display: none;
@@ -99,15 +99,16 @@ header{
             i{
                 font-size:1.3em;
                 font-weight:700;
-                color:rgb(29, 28, 28);
+                color:rgb(48, 48, 48);
             }
-           
         }
+        transition: 0.3s ease-in-out;
         display: flex;
         align-content: center;
         justify-content: space-between;
-        width:95%;
-        padding:20px 0px;
+        width:98%;
+        z-index:20 !important;
+        padding:20px 5px;
         @include align(0px)
     }
     .start{
@@ -117,6 +118,7 @@ header{
             text-align: center;
             h2{
                 font-size:1.7em;
+                z-index: -3;
                 color:rgb(255, 255, 255);
                 
             }
@@ -124,9 +126,7 @@ header{
                 @include buttons(rgb(255, 255, 255));
                margin:10% 0px;
                font-weight:2em;
-             
             }
-         
         }
         .image{
             width:100%;
@@ -138,10 +138,19 @@ header{
         }
     }  
 }
-main{
+#begin{
+  background-repeat: 2;
+  background-size: cover;
+background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%239C92AC' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
     margin-top:12%;
     .begin{
         padding:10px 0px;
+        &:nth-child(3){
+            background-image:url(../images/services.svg) ;
+            background-size: 40%;
+            background-position: left;
+            background-repeat: no-repeat;
+        }
         .wrap{
             text-align: center;
             width:95%;
