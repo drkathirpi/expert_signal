@@ -2,9 +2,9 @@
 $(document).ready(function(){
     $("#sticker").sticky({topSpacing:0, center:true, widthFromWrapper:true, zIndex:24});
     $('#sticker').on('sticky-start', ()=>{
-        $('#sticker').css({'background':'white', "padding":"5px auto"});
-        $('#sticker .logo h3 span:nth-child(2)').css('color','purple','');
-        $('#sticker .menu-bar i').css('color', "black")
+        $('#sticker').css({'background':'rgb(46,7,46)', "padding":"5px auto"});
+        $('#sticker .logo h3 span:nth-child(2)').css('color','white','');
+        $('#sticker .menu-bar i').css('color', "white")
     })
     $('#sticker').on('sticky-end', ()=>{
         $('#sticker .menu-bar i').css('color', "")
