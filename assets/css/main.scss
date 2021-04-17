@@ -49,7 +49,7 @@ $fore-color :rgb(255, 255, 255);
 }
 
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
 }
 .hide{
@@ -58,12 +58,12 @@ body{
 .menu{
     width:100%;
     position:fixed;
-    z-index:24;
+    z-index:20;
     justify-content: center;
      height:110%;
     top:0;
-    color: rgb(0, 0, 0);
-    background:rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    background:rgb(46, 7, 46);
     text-align: center;
     display:none;
     overflow:hidden;
@@ -87,8 +87,8 @@ body{
         position:fixed;
         top:30%;
         left:8%;
-        animation: moveBalls 9s forwards infinite;
-        background:rgba(0, 128, 0, 0.137);
+        animation: moveBalls 5s forwards infinite;
+        background:#FF80FF;
     }
     .round1{ 
         width:150px;
@@ -98,14 +98,14 @@ body{
         position:fixed;
         top:10%;
         right:10%;
-        background:rgba(255, 166, 0, 0.275);
+        background:orange;
         animation: moveBall2 4s forwards infinite;
     }
     .round2{
         width:100px;
         height:100px;
         border-radius:100%;
-        background:rgba(51, 238, 238, 0.199);
+        background:rgb(51, 238, 238);
         z-index:-22;
         position:fixed;
         bottom:15%;
@@ -137,10 +137,10 @@ header{
             }
         }
         .menu-bar{
+            z-index:30;
             i{
                 font-size:1.3em;
                 font-weight:700;
-                z-index:30;
                 color:rgb(255, 255, 255);
             }
             z-index:30;
@@ -151,8 +151,9 @@ header{
         align-content: center;
         justify-content: space-between;
         width:100%;
+        z-index:23;
         position: fixed;
-        z-index:24;
+
         top:0px;
         padding:20px 20px;
         @include align(0px)

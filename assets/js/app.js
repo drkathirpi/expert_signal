@@ -17,7 +17,7 @@ $(document).ready(function(){
 
         if(document.querySelector('.menu-bar i').className === 'ri-menu-line'){
             document.querySelector('.menu-bar i').className = 'ri-close-line';
-            document.querySelector('.menu-bar i').style.color="black";
+            document.querySelector('.menu-bar i').style.color="white";
         }
         else{
            document.querySelector('.menu-bar i').className ="ri-menu-line";
