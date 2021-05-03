@@ -1,0 +1,19 @@
+{
+  "name": "expert_signals",
+  "version": "1.0.0",
+  "description": "Website for Expert Signals Co",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Akohjesse/expert_signal.git"
+  },
+  "author": "Jesse Akoh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Akohjesse/expert_signal/issues"
+  },
+  "homepage": "https://github.com/Akohjesse/expert_signal#readme"
+}

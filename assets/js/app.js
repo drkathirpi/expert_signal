@@ -2,7 +2,7 @@
 $(document).ready(function(){
     $("#sticker").sticky({topSpacing:0, center:true, widthFromWrapper:true, zIndex:24});
     $('#sticker').on('sticky-start', ()=>{
-        $('#sticker').css({'background':'rgb(46,7,46)', "padding":"5px auto"});
+        $('#sticker').css({'background':'rgb(17, 7, 46)', "padding":"5px auto"});
         $('#sticker .logo h3 span:nth-child(2)').css('color','white','');
         $('#sticker .menu-bar i').css('color', "white")
     })
@@ -14,6 +14,7 @@ $(document).ready(function(){
      
     $('.menu-bar').click(()=>{
        document.querySelector('.menu').classList.toggle('hide');
+       $('body').toggleClass('hide')
 
         if(document.querySelector('.menu-bar i').className === 'ri-menu-line'){
             document.querySelector('.menu-bar i').className = 'ri-close-line';
@@ -25,9 +26,6 @@ $(document).ready(function(){
         }
     })
 
-    $('#readmebtn').click(()=>{
-         $('.read_more').slideToggle('slow');
-    })
   });
 
 
