@@ -47,7 +47,9 @@ $fore-color :rgb(17, 7, 46);
     margin: 0px;
     padding:0px;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
