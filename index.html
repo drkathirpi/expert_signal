@@ -12,6 +12,7 @@
     <!-- Seo tags -->
     <meta property="og:title" content="Get Accurate Crypto Signals from expert signals" />
     <meta property="og:description" content="Make money trading crypto" />
+    <meta name="google-signin-client_id" content="690647537811-0k11i5blrqmhjjp1b8vlbaptrdsmf6pb.apps.googleusercontent.com">
 
     <!-- fonts and css -->
 
@@ -71,7 +72,7 @@
                       <span>experts</span> out there</h2>
                       <p>Make money trading cryptocurrencies, access accurate, true to the market, trading charts and signals. Learn and Earn</p>
                 
-                   <a href="#begin"><button>Get Started</button></a>   
+                   <a href="#begin"><button><div class="g-signin2" data-onsuccess="onSignIn"></div></button></a>   
             </div>
              <div class="barrage">
                  <img src="assets/images/undraw_financial_data_es63.svg" alt="">
@@ -254,5 +255,39 @@
     <script src="./assets/js/scroll.js"></script> 
    
     <script src="./assets/js/app.js"></script>
+
+    <script>
+        function onSignIn(googleUser) {
+  var profile = googleUser.getBasicProfile();
+  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+  console.log('Name: ' + profile.getName());
+  console.log('Image URL: ' + profile.getImageUrl());
+  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+}
+    </script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyC2Ge6Bkxgh7O7UlWr4g_sHcrCRsYKo3yo",
+    authDomain: "expert-signals-website.firebaseapp.com",
+    projectId: "expert-signals-website",
+    storageBucket: "expert-signals-website.appspot.com",
+    messagingSenderId: "475756382920",
+    appId: "1:475756382920:web:32c8c011cc0a744621b3fd",
+    measurementId: "G-91GNBL8VXW"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
     </body>
 </html>
