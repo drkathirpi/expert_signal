@@ -13,21 +13,44 @@
     <meta property="og:title" content="Get Accurate Crypto Signals from expert signals" />
     <meta property="og:description" content="Make money trading crypto" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link 0rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/signup.css">
 </head>
 <body>
+   
     <div class="container">
         <div class="signUp">
             <h3>
                 Sign Up and recieve accurate crypto signals on the go
             </h3>
-        </div>
-    
-    </div>
 
+            <form id="form" action="">
+
+               <div class="wrap">
+                <label for="name">Enter Name</label><br><br>
+                <input name="name" id="name" type="text" placeholder="Ohai Rapheal">
+               </div>
+
+
+                <div class="wrap">
+                    <label for="email">Enter Email</label><br><br>
+                <input name="email" id="email" type="email" placeholder="Blackcamaru@Ymail.com">
+                </div>
+
+                <button class="submit" type="submit" >Sign Up</button>
+
+            </form>
+            <button class="back" onclick="history.back()">Back to home page</button>
+       </div>
     
+       
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-analytics.js"></script>
+    <script src="assets/js/fireAuth.js"></script>
 </body>
 </html>
