@@ -33,6 +33,7 @@ firebase.auth()
     if (result.credential) {
       /** @type {firebase.auth.OAuthCredential} */
       var credential = result.credential;
+      console.log(result.credential)
 
       // This gives you a Google Access Token. You can use it to access the Google API.
       var token = credential.accessToken;
@@ -40,6 +41,7 @@ firebase.auth()
     }
     // The signed-in user info.
     var user = result.user;
+    console.log(result.user)
   }).catch((error) => {
     // Handle Errors here.
     var errorCode = error.code;
