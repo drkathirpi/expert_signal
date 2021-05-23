@@ -11,36 +11,16 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
   firebase.analytics();
 
+firebase.auth.languageCode = 'it';
+var provider = new firebase.auth.GoogleAuthProvider();
 
-  firebase.auth().languageCode = 'it';
+firebase.auth.signInWithPopup(provider).then((result) => {
+    var credential = result.credential;
+    var token = result.accessToken;
+    var user = result.user;
+}).catch((error)=>{
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    var email = error.email;
+})
 
-
-
-window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('sign-in-button', {
-  'size': 'invisible',
-  'callback': (response) => {
-    // reCAPTCHA solved, allow signInWithPhoneNumber.
-    onSignInSubmit();
-  }
-});
-
-const phoneNumber = getPhoneNumberFromUserInput();
-const appVerifier = window.recaptchaVerifier;
-firebase.auth().signInWithPhoneNumber(phoneNumber, appVerifier)
-    .then((confirmationResult) => {
-      window.confirmationResult = confirmationResult;
-    }).catch((error) => {
-    });
-
-    const code = getCodeFromUserInput();
-confirmationResult.confirm(code).then((result) => {
-  // User signed in successfully.
-  const user = result.user;
-  // ...
-}).catch((error) => {
-  // User couldn't sign in (bad verification code?)
-  // ...
-});
-
-var credential = firebase.auth.PhoneAuthProvider.credential(confirmationResult.verificationId, code);
-firebase.auth().signInWithCredential(credential);
