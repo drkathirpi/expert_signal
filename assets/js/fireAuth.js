@@ -14,7 +14,8 @@ firebase.initializeApp(firebaseConfig);
 firebase.auth.languageCode = 'it';
 var provider = new firebase.auth.GoogleAuthProvider();
 
-firebase.auth.signInWithPopup(provider).then((result) => {
+firebase.auth()
+  .signInWithPopup(provider).then((result) => {
     var credential = result.credential;
     var token = result.accessToken;
     var user = result.user;
