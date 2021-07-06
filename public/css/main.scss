@@ -1,5 +1,7 @@
-$fore-color :rgb(17, 7, 46);
+@import url('https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lakki+Reddy&display=swap');
 
+$fore-color :rgb(17, 7, 46);
 
 @mixin align($margin-top){
      margin:$margin-top auto;
@@ -130,12 +132,8 @@ header{
         }
         .logo{
             h3{
-               span{
-                       color:rgb(245, 245, 245);
-                       &:nth-child(1){
-                       color:orange;
-                       }
-               }
+            font-family: 'Bilbo Swash Caps', cursive;
+            color:lightgreen;
             }
         }
         .menu-bar{
@@ -168,8 +166,10 @@ header{
             @include align(0);
             text-align: center;
             h2{
-                font-size:1.5em;
+                font-size:1.8em;
+                font-family: 'Lakki Reddy', cursive;
                 z-index: -9;
+                line-height:30px;
                 color:rgb(255, 255, 255);   
             }
             p{
@@ -178,11 +178,11 @@ header{
                 font-size: 15px;
             }
             button{
-                @include buttons(orange);
+                @include buttons($fore-color);
                margin:5% 0px;
                outline: none;
-               border:none;
-               color:white;
+               border:1px solid lightgreen;
+               color:orange;
                font-weight:2em;
             }
         }
@@ -201,14 +201,14 @@ header{
         padding:10px 0px;
         .wrap{
             border-radius: 9px;
-            width:90%;
+            width:95%;
             text-align: center;
             box-shadow:1px 1px 20px 1px rgb(192, 192, 192);
             padding:20px 5px;
             @include align(10px);
             .text_h3{
                 font-size:0.9em;
-                font-weight:600;
+                font-weight:500;
                 margin:2% auto;
             }
              button{
@@ -222,7 +222,7 @@ header{
                 
                  @include align(5%);
                 img{
-                    width:90%;
+                    width:99%;
                  
                     
                 }
@@ -237,6 +237,7 @@ header{
         @include align(10%);
         .text_p{
             padding:20px;
+            line-height: 27px;
              border-radius:5px;
              p{
                  font-size: 0.9em;
