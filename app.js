@@ -1,7 +1,9 @@
-const app = require('express');
+const express = require('express');
 const path = require('path');
-const expressEdge =  require('express-edge')
+const app = express();
+const routes = require("./server/routes/index-routes")
 
+app.use(routes);
 
 
 
