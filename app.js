@@ -1,8 +1,7 @@
 const app = require('express');
 const path = require('path');
+const expressEdge =  require('express-edge')
 
 
 
-app.get('/', (req, res)=> {
-  res.render('index')
-})
+
