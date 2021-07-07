@@ -5,6 +5,10 @@ var bodyParser = require('body-parser');
 
 const router = express.Router()
 const landPage =  require("../controllers/homepage");
+const signUpPage = require("../controllers/createAccount")
+const loginPage =  require("../controllers/loginAccount")
+
+
 app.use(express.static('public'));
 
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -12,11 +16,8 @@ app.use(bodyParser.json());
 
 router.get('/', landPage);
 
-router.get('/signUp', (req, res)=>{
-    res.sendFile(path.resolve('./Pages/signUp.html'))
-})
+router.get('/signUp', signUpPage) 
 
-router.get('/login', (req, res)=> {
-    res.sendFile(path.resolve('./Pages/login.html'))
-})
+router.get('/login', loginPage)
+
 module.exports = router;
