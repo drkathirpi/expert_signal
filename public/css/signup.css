@@ -13,11 +13,9 @@
       height: 100vh;
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
-    background-color:rgba(17, 7, 46, 0.953);
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-blend-mode: darken;
-    background-image: url(https://images.unsplash.com/photo-1612043273531-601d2cd4855e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=400&q=60);
+    background: #0F2027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
   
   .hide {
@@ -41,9 +39,9 @@
       margin: 10% 20px;
       padding:20px 20px;
       border-radius: 2%;
-      height:50vh;
+      height:auto;
       background-color: white;
-      box-shadow: 0px -1px 20px 5px rgb(0, 0, 0)
+      box-shadow: 0px -1px 10px 3px rgb(85, 84, 84);
   }
   .wrap{
       margin:20px 0px;
@@ -96,4 +94,12 @@
     text-transform: uppercase;
     text-decoration: none;
     white-space: nowrap;
+  }
+  .loginLink{
+    margin:8px 0px;
+    font-size: 0.9em ;
+
+  }
+  .loginLink a {
+    color: rgb(194, 0, 0);
   }

@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/signup.css">
+    <link rel="stylesheet" href="/css/signup.css">
 </head>
 <body>
    
@@ -30,17 +30,27 @@
             <form id="form" action="">
 
                <div class="wrap">
-                <label for="name">Enter Name</label><br><br>
+                <label for="name">Enter Name</label><br>
                 <input name="name" id="name" type="text" placeholder="Ohai Rapheal">
                </div>
 
 
                 <div class="wrap">
-                    <label for="email">Enter Email</label><br><br>
+                    <label for="email">Enter Email</label><br>
                 <input name="email" id="email" type="email" placeholder="Blackcamaru@Ymail.com">
                 </div>
 
+                <div class="wrap">
+                    <label for="password">Password</label><br>
+                <input name="email" id="email" type="password" placeholder="Blackcamaru@Ymail.com">
+                </div>
+
                 <button class="submit" type="submit" >Sign Up</button>
+                
+                  <div class="loginLink">
+                    <a href="/login">Already have an account? Login here</a>
+                  </div>
+                
 
             </form>
             <button class="back" onclick="history.back()">Back to home page</button>
