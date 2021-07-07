@@ -1,4 +1,4 @@
 
 module.exports = (req, res) => {
-    res.render('expertsignals')
+    res.sendFile(path.resolve(__dirname , '/Pages/index.html'))
 }
