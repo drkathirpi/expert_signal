@@ -16,4 +16,7 @@ router.get('/signUp', (req, res)=>{
     res.sendFile(path.resolve('./Pages/signUp.html'))
 })
 
+router.get('/login', (req, res)=> {
+    res.sendFile(path.resolve('./Pages/login.html'))
+})
 module.exports = router;
