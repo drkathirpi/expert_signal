@@ -6,7 +6,7 @@ const { config, engine } = require("express-edge");
 const port = process.env.PORT || 7000;
 app.set('views', __dirname + '/views');
 app.use(engine);
-app.use(express.static('./public'));
+app.use(express.static('public'));
 app.use('/', routes)
 
 app.listen(port, ()=>{
