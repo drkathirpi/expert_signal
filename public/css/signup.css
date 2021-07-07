@@ -27,7 +27,7 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
       padding:20px 0px;
   }
   .container .signUp{
-      width:95%;
+      width:100%;
       margin: 20px auto;
   }
   .container .signUp h3{
