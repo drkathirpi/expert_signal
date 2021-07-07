@@ -4,7 +4,8 @@
   "description": "Website for Expert Signals Co",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -14,6 +15,10 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Akohjesse/expert_signal/issues"
+  }, 
+  "engines": {
+    "node": "16.2.0",
+    "npm": "7.13.0"
   },
   "homepage": "https://github.com/Akohjesse/expert_signal#readme",
   "dependencies": {
