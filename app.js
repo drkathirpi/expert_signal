@@ -13,7 +13,7 @@ InitiateMongoServer();
 if (process.env.NODE_ENV = "Production" ){
     app.set('views', __dirname + '/views');
     app.use(engine);
-    app.use(express.static('/public'));
+    app.use(express.static('public'));
     app.use('/', routes)
 }
 
