@@ -8,16 +8,22 @@ const InitiateMongoServer = require('./config/db');
 
 InitiateMongoServer();
 
-app.set('views', __dirname + '/views');
-app.use(engine);
-app.use(express.static('public'));
-app.use('/', routes)
 
 
+if (process.env.NODE_ENV = "Production" ){
+    app.set('views', __dirname + '/views');
+    app.use(engine);
+    app.use(express.static('public'));
+    app.use('/', routes)
+}
 
 app.listen(port, ()=>{
     console.log("Server is running on port " + port)
 })
+
+
+
+
 
 
 
