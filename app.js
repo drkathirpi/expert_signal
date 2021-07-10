@@ -1,31 +1,23 @@
+const path = require('path');
 const express = require('express');
 const app = express();
-const routes = require("./routes/index-routes");
-const user = require("./routes/user");
-const { config, engine } = require("express-edge");
-const port = process.env.PORT || 7000;
-const InitiateMongoServer = require('./config/db');
+
+const index = require('./routes/index');
+const user = require('./routes/user')
+const port = process.env.PORT || 5000;
+
+var bodyParser = require('body-parser')
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
+app.use(user)
 
 
-app.use(express.urlencoded({extended : false}));
-
-InitiateMongoServer();
-app.use(express.json())
-
-if (process.env.NODE_ENV = "Production" ){
-    app.set('views', __dirname + '/views');
-    app.use(engine);
+if (process.env.NODE_ENV = "Production" || process.env.NODE_ENV === "staging"){
     app.use(express.static('public'));
-    app.use('/' , routes);
+    app.use(index);
 }
 
+
 app.listen(port, ()=>{
-    console.log("Server is running on port " + port)
+    console.log('Server started on port ' + port)
 })
-
-
-
-
-
-
-
