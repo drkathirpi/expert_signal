@@ -27,7 +27,7 @@
                 Sign Up and recieve accurate crypto signals on the go
             </h3>
 
-            <form id="form" action="/signUp" method ="POST" encType="multipart/form-data">
+            <form id="form" action="/user/signup" method ="POST" encType="multipart/form-data">
 
                <div class="wrap">
                 <label for="name">Enter Name</label><br>
@@ -37,12 +37,12 @@
 
                 <div class="wrap">
                     <label for="email">Enter Email</label><br>
-                <input name="email" id="email" type="email" required placeholder="Blackcamaru@Ymail.com">
+                <input name="email" autocomplete type="email" required placeholder="Blackcamaru@Ymail.com">
                 </div>
 
                 <div class="wrap">
                     <label for="password">Password</label><br>
-                <input name="password" id="email" type="password" required placeholder="Blackcamaru@Ymail.com">
+                <input name="password" type="password" required placeholder="Blackcamaru@Ymail.com">
                 </div>
 
                 <button class="submit" type="submit" >Sign Up</button>
