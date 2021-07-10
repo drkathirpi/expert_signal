@@ -1,0 +1,46 @@
+@layout('layouts.struct');
+
+@section('formData')
+<div class="container">
+    <div class="signUp">
+        <h3>
+            Sign Up and recieve accurate crypto signals on the go
+        </h3>
+
+        <form id="form" action="/user/signup" method ="POST" encType="application/json">
+
+           <div class="wrap">
+            <label for="username">Enter Name</label><br>
+            <input name="username" id="username" type="text" required  placeholder="Ohai Rapheal">
+           </div>
+
+
+            <div class="wrap">
+                <label for="email">Enter Email</label><br>
+            <input name="email" autocomplete type="email" required placeholder="Blackcamaru@Ymail.com">
+            </div>
+
+            <div class="wrap">
+                <label for="password">Password</label><br>
+            <input name="password" type="password" required placeholder="Blackcamaru@Ymail.com">
+            </div>
+
+            <button class="submit" type="submit" >Sign Up</button>
+            
+              <div class="loginLink">
+                <a href="/login">Already have an account? Login here</a>
+              </div>
+            
+
+        </form>
+        <button class="back" onclick="history.back()">Back to home page</button>
+   </div>
+
+   
+</div>
+@endsection
+   
+    
+   
+
+  

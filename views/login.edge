@@ -1,0 +1,29 @@
+@layout('layouts.struct');
+
+@section('formData')
+<div class="container">
+    <div class="signUp">
+        <h3>
+              Login to your account
+        </h3>
+
+        <form id="form" action="" method ="POST" encType="multipart/form-data">
+            <div class="wrap">
+                <label for="email">Enter Email</label><br>
+            <input name="email" id="email" type="email" required  placeholder="Blackcamaru@Ymail.com">
+            </div>
+
+            <div class="wrap">
+                <label for="password">Password</label><br>
+            <input name="email" id="email" type="password" required  placeholder="Blackcamaru@Ymail.com">
+            </div>
+
+            <button class="submit" type="submit" >Login</button>                
+
+        </form>
+        <button class="back" onclick="history.back()">Back to SignUp page</button>
+   </div>
+
+   
+</div>
+@endsection

@@ -7,11 +7,15 @@ const bcrypt = require('bcryptjs');
 
 
 router.get('/signUp', (req, res)=> {
-    res.sendFile(path.resolve('./Pages/signUp.html'))
+    res.render('signup',{
+        typeOfForm: 'Sign Up'
+    });
 })
 
 router.get('/login', (req, res)=>{
-    res.sendFile(path.resolve('./Pages/login.html'))
+    res.render('login', {
+        typeOfForm: 'Login'
+    })
 })
 
 router.post('/user/signup',
@@ -69,7 +73,5 @@ router.post('/user/signup',
         }
     })
 });
-
-
 
 module.exports = router;
