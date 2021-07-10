@@ -11,7 +11,7 @@ var bodyParser = require('body-parser');
 InitiateMongoServer();
 
 app.use(engine);
-app.set('views', __dirname + '/views/layouts');
+app.set('views', __dirname + '/views');
 
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
