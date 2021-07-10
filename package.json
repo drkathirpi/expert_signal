@@ -22,6 +22,10 @@
   },
   "homepage": "https://github.com/Akohjesse/expert_signal#readme",
   "dependencies": {
-    "body-parser": "^1.19.0"
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "express-edge": "^2.0.2",
+    "express-validator": "^6.12.0",
+    "mongoose": "^5.13.2"
   }
 }

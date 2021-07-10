@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const MONGOURL = "mongodb+srv://ferventdev:ferventdev@userdata.mkiqn.mongodb.net/expertData?retryWrites=true&w=majority";
+const MONGOURL = "mongodb+srv://fervent:ferventdev@cluster0.mkiqn.mongodb.net/expertData?retryWrites=true&w=majority";
 
 const InitiateMongoServer = () => {
     mongoose.connect(MONGOURL, {useNewUrlParser: true})
@@ -9,3 +9,4 @@ const InitiateMongoServer = () => {
 }
 
 module.exports = InitiateMongoServer;
+

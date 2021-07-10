@@ -2,6 +2,8 @@ const express = require('express');
 const router = express.Router();
 const path = require('path');
 const User = require('../models/User');
+const { check, validationResult} = require("express-validator");
+const bcrypt = require('bcryptjs');
 
 
 router.get('/signUp', (req, res)=> {
@@ -12,31 +14,44 @@ router.get('/login', (req, res)=>{
     res.sendFile(path.resolve('./Pages/login.html'))
 })
 
-router.post('/user/signup', (req, res)=>{
-    const {name,email, password,} = req.body;
-    console.log(req.body)
-    let errors = [];
-    console.log(' Name ' + name+ ' email :' + email+ ' pass:' + password);
+router.post('/user/signup',
+      [check("username", "Please Enter a valid username").not().isEmpty(), 
+      check("email", "Please enter a valid username").isEmail(), 
+      check("password", "Password must be more than 6 characters").isLength({min:6})
+    ],
+     (req, res)=>{
+     const errors = validationResult(req);
+        if (!errors.isEmpty()) {
+            return res.status(400).json({
+                errors: errors.array()
+            });
+        }
 
-    if (!name || !email || !password) {
-        errors.push({msg : "Please fill in all fields"})
-    }
+    const {username,email, password,} = req.body;
 
-    if(password.length < 6 ) {
-        errors.push({msg : 'password atleast 6 characters'})
-    }
-    
-    User.findOne({email : email}).exec((err,user)=>{
-        console.log(user);   
+
+    User.findOne({email : email}).exec((err,user)=>{ 
         if(user) {
             errors.push({msg: 'email already registered'}); 
         } 
         else {
-            const newUser = new User({
-                name : name,
+            const user = new User({
+                username : username,
                 email : email,
                 password : password
             });
+
+            bcrypt.genSalt(10, (err, salt)=>{
+                bcrypt.hash(user.password, salt, (err,hash)=>{
+                    if(err) throw err;
+                })
+            })
+           
+            user.save((err)=>{
+                if(err) throw err;
+                else res.render('dashboard')
+             
+            })
         }
     })
 });
