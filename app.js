@@ -8,8 +8,12 @@ const user = require('./routes/user');
 const port = process.env.PORT || 5000;
 const session = require('express-session');
 const flash = require('connect-flash');
+const passport = require('passport');
 
 var bodyParser = require('body-parser');
+
+require("./config/passport")(passport);
+
 InitiateMongoServer();
 
 app.use(engine);
@@ -20,7 +24,8 @@ app.use(session({
     resave: true,
     saveUninitialized: true
 }))
-
+app.use(passport.initialize());
+app.use(passport.session());
 app.use(flash());
 app.use((req,res,next)=> {
   res.locals.success_msg = req.flash('success_msg');
