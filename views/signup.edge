@@ -10,6 +10,19 @@
         <form id="form" action="/user/signup" method ="POST" encType="application/json">
 
            <div class="wrap">
+               @if(typeOf errors! = 'undefined')
+                 errors.forEach((err)=>{
+                     <p>error.msg</p>
+                 })
+               @endif
+
+               @if(success_msg!= '')
+                   <p>success_msg</p>  
+               @endif
+
+               @if(error_msg!= '')
+                 <p>error_msg</p>  
+                @endif
             <label for="username">Enter Name</label><br>
             <input name="username" id="username" type="text" required  placeholder="Ohai Rapheal">
            </div>
@@ -22,7 +35,12 @@
 
             <div class="wrap">
                 <label for="password">Password</label><br>
-            <input name="password" type="password" required placeholder="Blackcamaru@Ymail.com">
+            <input name="password" type="password" required >
+            </div>
+
+            <div class="wrap">
+                <label for="password2">Confirm Password</label><br>
+            <input name="password2" type="password" required >
             </div>
 
             <button class="submit" type="submit" >Sign Up</button>

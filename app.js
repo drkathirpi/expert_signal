@@ -4,14 +4,30 @@ const app = express();
 const {config, engine} = require('express-edge');
 const InitiateMongoServer = require('./config/db');
 const index = require('./routes/index');
-const user = require('./routes/user')
+const user = require('./routes/user');
 const port = process.env.PORT || 5000;
+const session = require('express-session');
+const flash = require('connect-flash');
 
 var bodyParser = require('body-parser');
 InitiateMongoServer();
 
 app.use(engine);
 app.set('views', __dirname + '/views');
+
+app.use(session({
+    secret: 'secret',
+    resave: true,
+    saveUninitialized: true
+}))
+
+app.use(flash());
+app.use((req,res,next)=> {
+  res.locals.success_msg = req.flash('success_msg');
+  res.locals.error_msg = req.flash('error_msg');
+  res.locals.error  = req.flash('error');
+  next();
+})
 
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
