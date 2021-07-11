@@ -23,24 +23,21 @@
                @if(error_msg!= '')
                  <p>{{error_msg}}</p>  
                 @endif
-            <label for="username">Enter Name</label><br>
-            <input name="username" id="username" type="text" required  placeholder="Ohai Rapheal">
+           
+            <input name="username" id="username" type="text" placeholder="Enter Username" required>
            </div>
 
 
             <div class="wrap">
-                <label for="email">Enter Email</label><br>
-            <input name="email" autocomplete type="email" required placeholder="Blackcamaru@Ymail.com">
+            <input name="email" autocomplete type="email" placeholder="Enter email" required>
             </div>
 
             <div class="wrap">
-                <label for="password">Password</label><br>
-            <input name="password" type="password" required >
+            <input name="password" type="password" placeholder="Enter Password" required >
             </div>
 
             <div class="wrap">
-                <label for="password2">Confirm Password</label><br>
-            <input name="password2" type="password" required >
+            <input name="password2" type="password" placeholder="confirm password" required >
             </div>
 
             <button class="submit" type="submit" >Sign Up</button>

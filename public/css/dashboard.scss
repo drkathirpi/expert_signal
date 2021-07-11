@@ -1,0 +1,53 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+header{
+    background: #f3f3f7;
+    color:rgb(40, 42, 51);
+    padding:15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    li{
+        list-style-type: none;
+    };
+ .menu-icon{
+     i{
+         font-size:1.3em;
+         font-weight: 500;
+     }
+ }
+}
+.block{
+    width:100%;
+    margin:20px auto;
+    padding:10px;
+    .dashboard{
+        width:100%;
+        padding:40px 30px;
+        height:30vh;
+        background: #11998e;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+      border-radius: 10px;
+      .welcome{
+          width:100%;
+          h1{
+              color:white;
+              text-align: center;
+              font-size:1.5em;
+          }
+      }
+    }
+    .signals{
+        margin:10% auto;
+        width:97%;
+        h3{
+            text-align: center;
+            color:purple;
+        }
+    }
+}

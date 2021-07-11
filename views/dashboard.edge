@@ -1,1 +1,15 @@
-<h1>Welcome to expert signals {{name}}</h1>
+@layout('layouts.headerfooter')
+
+@section('content')
+<div class="block container">
+    <div class="dashboard">
+        <div class="welcome">
+            <h1>Welcome {{from}}</h1>
+        </div>
+    </div>
+
+    <div class="signals">
+        <h3>Latest Signals</h3>
+    </div>
+</div>
+@endsection
