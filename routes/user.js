@@ -4,7 +4,8 @@ const path = require('path');
 const User = require('../models/User');
 const { check, validationResult} = require("express-validator");
 const bcrypt = require('bcryptjs');
-
+const passport = require('passport');
+require("../config/passport")(passport)
 
 router.get('/signUp', (req, res)=> {
     res.render('signup',{
@@ -12,20 +13,22 @@ router.get('/signUp', (req, res)=> {
     });
 })
 
-router.get('/login', (req, res)=>{
+router.get('/login' , (req, res)=>{
     res.render('login', {
         typeOfForm: 'Login'
     })
 })
 
-router.post('/user/signup',
+router.post('/signup', 
       [
       check("email", "Please enter a valid username").isEmail(), 
       check("password", "Password must be more than 6 characters").isLength({min:6})
     ],
      (req, res)=>{
         const {username,email, password, password2} = req.body;
-      const errors = validationResult(req);
+          
+    
+    const errors = validationResult(req);
         if (!errors.isEmpty()) {
             return res.status(400).json({
                 errors: errors.array()
@@ -42,12 +45,15 @@ router.post('/user/signup',
             } 
             
             if(password !== password2) {
-                errors.push({msg : "passwords dont match"});
+                return res.status(400).json({
+                    msg: "Passwords do not match"
+                });
             }
     User.findOne({email : email}).exec((err,user)=>{ 
         if(user) {
-            errors.push({msg: 'email already registered'}); 
-            res.render('signup',{errors,name,email,password,password2})  
+            return res.status(400).json({
+                msg: "User Already Exists"
+            });
         } 
         else {
             const user = new User({
@@ -76,12 +82,12 @@ router.post('/user/signup',
     })
 });
 
-router.post('/login',  passport.authenticate('local', {
-    successRedirect : '/dashboard',
-    failureRedirect : '/users/login',
-    failureFlash : true
-    }),  (req,res,next)=>{
-     
+router.post('/login', (req,res,next)=>{
+    passport.authenticate('local',{
+        successRedirect : '/dashboard',
+        failureRedirect: '/user/login',
+        failureFlash : true
+    })(req,res,next)
 })
 
 router.get('/logout', (req,res)=>{

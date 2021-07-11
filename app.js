@@ -36,7 +36,7 @@ app.use((req,res,next)=> {
 
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
-app.use(user)
+app.use('/user', user)
 
 
 if (process.env.NODE_ENV = "Production" || process.env.NODE_ENV === "staging"){

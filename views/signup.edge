@@ -10,18 +10,18 @@
         <form id="form" action="/user/signup" method ="POST" encType="application/json">
 
            <div class="wrap">
-               @if(typeOf errors! = 'undefined')
-                 errors.forEach((err)=>{
-                     <p>error.msg</p>
+               @if(errors.length > 0)
+                 {{errors}}.forEach((err)=>{
+                     <p>err.msg</p>
                  })
                @endif
 
                @if(success_msg!= '')
-                   <p>success_msg</p>  
+                   <p>{{success_msg}}</p>  
                @endif
 
                @if(error_msg!= '')
-                 <p>error_msg</p>  
+                 <p>{{error_msg}}</p>  
                 @endif
             <label for="username">Enter Name</label><br>
             <input name="username" id="username" type="text" required  placeholder="Ohai Rapheal">
@@ -46,7 +46,7 @@
             <button class="submit" type="submit" >Sign Up</button>
             
               <div class="loginLink">
-                <a href="/login">Already have an account? Login here</a>
+                <a href="/user/login">Already have an account? Login here</a>
               </div>
             
 
