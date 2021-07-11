@@ -28,7 +28,7 @@ header{
         width:100%;
         animation-name: bg-color;
         animation-duration: 10s;
-        transition:10s ease-in-out;
+        transition:3s ease-in-out;
         animation-direction: normal;
         animation-play-state: running;
         animation-timing-function: ease-in-out;
@@ -66,8 +66,8 @@ header{
         margin:5% auto;
         width:97%;
         .wrap{
-            height:200px;
-            margin:10px 0px;
+            height:230px;
+            margin:1px 0px;
             border-radius: 12px;
             padding:30px;
             background:#e7e7ec;

@@ -41,8 +41,8 @@ header .menu-icon i {
           animation-name: bg-color;
   -webkit-animation-duration: 10s;
           animation-duration: 10s;
-  -webkit-transition: 10s ease-in-out;
-  transition: 10s ease-in-out;
+  -webkit-transition: 3s ease-in-out;
+  transition: 3s ease-in-out;
   -webkit-animation-direction: normal;
           animation-direction: normal;
   -webkit-animation-play-state: running;
@@ -93,8 +93,8 @@ header .menu-icon i {
 }
 
 .block .learn .wrap {
-  height: 200px;
-  margin: 10px 0px;
+  height: 230px;
+  margin: 1px 0px;
   border-radius: 12px;
   padding: 30px;
   background: #e7e7ec;
