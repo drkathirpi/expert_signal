@@ -37,14 +37,24 @@ header .menu-icon i {
 
 .block .dashboard {
   width: 100%;
+  -webkit-animation-name: bg-color;
+          animation-name: bg-color;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-transition: 10s ease-in-out;
+  transition: 10s ease-in-out;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
   padding: 40px 30px;
-  height: 30vh;
-  background: #11998e;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#38ef7d), to(#11998e));
-  background: linear-gradient(to right, #38ef7d, #11998e);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 150px;
   border-radius: 10px;
 }
 
@@ -59,12 +69,84 @@ header .menu-icon i {
 }
 
 .block .signals {
-  margin: 10% auto;
+  margin: 20% auto;
   width: 97%;
 }
 
 .block .signals h3 {
-  text-align: center;
-  color: purple;
+  color: #282a33;
+  font-size: 1.5em;
+  padding: 6px;
+}
+
+.block .signals .signal-field {
+  margin: 7% auto;
+  height: 80vh;
+  width: 100%;
+  border-radius: 10px;
+  background: #e7e7ec;
+}
+
+.block .learn {
+  margin: 5% auto;
+  width: 97%;
+}
+
+.block .learn .wrap {
+  height: 200px;
+  margin: 10px 0px;
+  border-radius: 12px;
+  padding: 30px;
+  background: #e7e7ec;
+}
+
+.block .learn .wrap h2 {
+  font-size: 1.3em;
+}
+
+@-webkit-keyframes bg-color {
+  0% {
+    background: -webkit-gradient(linear, left top, right top, from(#8e2de2), to(#4a00e0));
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+  }
+  25% {
+    background: -webkit-gradient(linear, left top, right top, from(#38ef7d), to(#11998e));
+    background: linear-gradient(to right, #38ef7d, #11998e);
+  }
+  50% {
+    background: -webkit-gradient(linear, left top, right top, from(#cc2b5e), to(#753a88));
+    background: linear-gradient(to right, #cc2b5e, #753a88);
+  }
+  75% {
+    background: -webkit-gradient(linear, left top, right top, from(#e65c00), to(#f9d423));
+    background: linear-gradient(to right, #e65c00, #f9d423);
+  }
+  100% {
+    background: -webkit-gradient(linear, left top, right top, from(#4e54c8), to(#8f94fb));
+    background: linear-gradient(to right, #4e54c8, #8f94fb);
+  }
+}
+
+@keyframes bg-color {
+  0% {
+    background: -webkit-gradient(linear, left top, right top, from(#8e2de2), to(#4a00e0));
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+  }
+  25% {
+    background: -webkit-gradient(linear, left top, right top, from(#38ef7d), to(#11998e));
+    background: linear-gradient(to right, #38ef7d, #11998e);
+  }
+  50% {
+    background: -webkit-gradient(linear, left top, right top, from(#cc2b5e), to(#753a88));
+    background: linear-gradient(to right, #cc2b5e, #753a88);
+  }
+  75% {
+    background: -webkit-gradient(linear, left top, right top, from(#e65c00), to(#f9d423));
+    background: linear-gradient(to right, #e65c00, #f9d423);
+  }
+  100% {
+    background: -webkit-gradient(linear, left top, right top, from(#4e54c8), to(#8f94fb));
+    background: linear-gradient(to right, #4e54c8, #8f94fb);
+  }
 }
 /*# sourceMappingURL=dashboard.css.map */

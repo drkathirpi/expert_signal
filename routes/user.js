@@ -16,6 +16,7 @@ router.get('/signUp', (req, res)=> {
 router.get('/login' , (req, res)=>{
     res.render('login', {
         typeOfForm: 'Login'
+        
     })
 })
 
@@ -70,7 +71,8 @@ router.post('/signup',
                         if(err) throw err;
                         
                         else req.flash('success_msg','SignUp successful'); res.render('dashboard', {
-                            name: user.username
+                            name: user.username,
+                            from: 'Welcome To Expert Signals'
                         })
                     })
                     

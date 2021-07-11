@@ -4,12 +4,62 @@
 <div class="block container">
     <div class="dashboard">
         <div class="welcome">
-            <h1>Welcome {{from}}</h1>
+           @if(from)
+              <h1>{{from}}</h1>
+           @else
+             <h1>Welcome Back</h1>
+           @endif
+        </div>
+        <div class="welcome-img">
+            <div class="image">
+                <img src="" alt="">
+            </div>
         </div>
     </div>
 
-    <div class="signals">
+    <section class="signals">
         <h3>Latest Signals</h3>
-    </div>
+        <div class="signal-field">
+
+        </div>
+    </section>
+
+    <section class="learn">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <div class="wrap">
+                      <h2>How to trade using Binance</h2>
+                      <div class="image">
+                          <img src="" alt="">
+                      </div>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="wrap">
+                    <h2></h2>
+                    <div class="image">
+                        <img src="" alt="">
+                    </div>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="wrap">
+                      <h2></h2>
+                      <div class="image">
+                        <img src="" alt="">
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+          </div>
+    </section>
 </div>
 @endsection

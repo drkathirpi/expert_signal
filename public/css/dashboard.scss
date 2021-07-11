@@ -26,12 +26,16 @@ header{
     padding:10px;
     .dashboard{
         width:100%;
+        animation-name: bg-color;
+        animation-duration: 10s;
+        transition:10s ease-in-out;
+        animation-direction: normal;
+        animation-play-state: running;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
         padding:40px 30px;
-        height:30vh;
-        background: #11998e;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        
+        height:150px;
       border-radius: 10px;
       .welcome{
           width:100%;
@@ -43,11 +47,51 @@ header{
       }
     }
     .signals{
-        margin:10% auto;
+        margin:20% auto;
         width:97%;
         h3{
-            text-align: center;
-            color:purple;
+            color:rgb(40, 42, 51);
+            font-size: 1.5em;
+            padding:6px;
+        }
+        .signal-field{
+            margin:7% auto;
+            height:80vh;
+            width: 100%;
+            border-radius: 10px;
+            background:#e7e7ec;
         }
     }
+    .learn{
+        margin:5% auto;
+        width:97%;
+        .wrap{
+            height:200px;
+            margin:10px 0px;
+            border-radius: 12px;
+            padding:30px;
+            background:#e7e7ec;
+            h2{
+                font-size: 1.3em;
+            }
+        }
+    }
+}
+
+@keyframes bg-color{
+     0%{
+        background: linear-gradient(to right, #8e2de2, #4a00e0);
+     }
+     25%{
+        background: linear-gradient(to right, #38ef7d, #11998e);
+     }
+     50%{
+         background:linear-gradient(to right, #cc2b5e, #753a88); ;
+     }
+     75%{
+        background: linear-gradient(to right, #e65c00, #f9d423);
+     }
+     100%{
+        background: linear-gradient(to right, #4e54c8, #8f94fb); 
+     }
 }
