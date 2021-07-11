@@ -63,6 +63,11 @@ header{
         }
     }
     .learn{
+        h2{
+            color:rgb(40, 42, 51);
+            font-size: 1.5em;
+            padding:6px;
+        }
         margin:5% auto;
         width:97%;
         .wrap{
@@ -73,11 +78,29 @@ header{
             background:#e7e7ec;
             h2{
                 font-size: 1.3em;
+                color: white;
+            }
+            .image{
+                margin-top: 10px;
+                width: 30%;
+                img{
+                    width: 100%;
+                }
             }
         }
     }
 }
-
+.swiper-slide .wrap{
+    &:nth-child(1){
+        background: linear-gradient(to right, #636363, #a2ab58);
+    }
+    &:nth-child(2){
+        background: linear-gradient(to right, #ee9ca7, #ffdde1);
+    }
+    &:nth-child(3){
+        background: linear-gradient(to right, #aa4b6b, #6b6b83, #3b8d99);
+    }
+}
 @keyframes bg-color{
      0%{
         background: linear-gradient(to right, #8e2de2, #4a00e0);
@@ -95,3 +118,4 @@ header{
         background: linear-gradient(to right, #4e54c8, #8f94fb); 
      }
 }
+

@@ -92,6 +92,12 @@ header .menu-icon i {
   width: 97%;
 }
 
+.block .learn h2 {
+  color: #282a33;
+  font-size: 1.5em;
+  padding: 6px;
+}
+
 .block .learn .wrap {
   height: 230px;
   margin: 1px 0px;
@@ -102,6 +108,31 @@ header .menu-icon i {
 
 .block .learn .wrap h2 {
   font-size: 1.3em;
+  color: white;
+}
+
+.block .learn .wrap .image {
+  margin-top: 10px;
+  width: 30%;
+}
+
+.block .learn .wrap .image img {
+  width: 100%;
+}
+
+.swiper-slide .wrap:nth-child(1) {
+  background: -webkit-gradient(linear, left top, right top, from(#636363), to(#a2ab58));
+  background: linear-gradient(to right, #636363, #a2ab58);
+}
+
+.swiper-slide .wrap:nth-child(2) {
+  background: -webkit-gradient(linear, left top, right top, from(#ee9ca7), to(#ffdde1));
+  background: linear-gradient(to right, #ee9ca7, #ffdde1);
+}
+
+.swiper-slide .wrap:nth-child(3) {
+  background: -webkit-gradient(linear, left top, right top, from(#aa4b6b), color-stop(#6b6b83), to(#3b8d99));
+  background: linear-gradient(to right, #aa4b6b, #6b6b83, #3b8d99);
 }
 
 @-webkit-keyframes bg-color {
