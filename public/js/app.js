@@ -1,16 +1,4 @@
 
-const swiper = new Swiper('.swiper-container',{
-    speed: 400,
-   spaceBetween: 100,
-   autoplay: {
-	delay: 2000,
-	disableOnInteraction: false,
-	}
-})
-
-
-
-
 $(document).ready(function(){
     $("#sticker").sticky({topSpacing:0, widthFromWrapper:true, zIndex:24});
     $('#sticker').on('sticky-start', ()=>{

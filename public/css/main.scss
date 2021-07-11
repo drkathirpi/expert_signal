@@ -80,7 +80,12 @@ body{
         li{
             list-style-type: none;
             padding:20px 0px;
+            cursor: pointer;
             font-size:1.4em;
+            a{
+                text-decoration: none;
+                color:white;
+            }
         }
     }
     .round{

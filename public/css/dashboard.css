@@ -5,6 +5,77 @@
           box-sizing: border-box;
 }
 
+.prompt {
+  z-index: 90;
+  height: 100vh;
+  -webkit-backdrop-filter: blur(4px) brightness(0.4);
+          backdrop-filter: blur(4px) brightness(0.4);
+  position: fixed;
+  top: 0px;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+
+.prompt .wrap {
+  padding: 20px 20px;
+  width: 94%;
+  border-radius: 13px;
+  margin: 50px auto;
+  background: white;
+}
+
+.prompt .wrap form h3 {
+  margin: 5px 0px;
+  font-size: 1.5em;
+}
+
+.prompt .wrap form h3 i {
+  color: blue;
+}
+
+.prompt .wrap form p {
+  line-height: 28px;
+  margin-top: 10px;
+}
+
+.prompt .wrap form p .story {
+  line-height: 28px;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.prompt .wrap form label {
+  color: green;
+}
+
+.prompt .wrap form input {
+  color: green;
+}
+
+.prompt .wrap button {
+  border-radius: 4px;
+  margin: 4px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: inline-block;
+  height: 38px;
+  padding: 0 31px;
+  text-align: center;
+  font-size: 13px;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.prompt .wrap #decline {
+  background: red;
+  color: white;
+}
+
 header {
   background: #f3f3f7;
   color: #282a33;
