@@ -241,7 +241,7 @@ header .menu-icon i {
 }
 
 .menu-area .wrap .container .greet {
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 .menu-area .wrap .container .greet h2 {
@@ -250,7 +250,7 @@ header .menu-icon i {
 }
 
 .menu-area .wrap .container nav {
-  margin-top: 8%;
+  margin-top: 10%;
 }
 
 .menu-area .wrap .container nav ul {
@@ -267,6 +267,10 @@ header .menu-icon i {
   margin: 15px 0px;
   list-style-type: none;
   font-size: 0.9em;
+}
+
+.menu-area .wrap .container nav ul li i {
+  font-size: 1em;
 }
 
 .menu-area .wrap .container nav ul li a {

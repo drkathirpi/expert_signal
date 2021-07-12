@@ -189,7 +189,7 @@ header{
                 }
               }
               .greet{
-                  margin-top:50px;
+                  margin-top:40px;
                   h2{
                       color:rgb(40, 42, 51);
                       font-size:1.4em;
@@ -197,7 +197,7 @@ header{
               }
       
               nav{
-                  margin-top:8%;
+                  margin-top:10%;
                   ul{
                       display: flex;
                       flex-direction: column;
@@ -205,6 +205,9 @@ header{
                           margin:15px 0px;
                           list-style-type: none;
                           font-size:0.9em;
+                          i{
+                            font-size:1em;
+                          }
                           a{
                               text-decoration: none;
                               color: inherit;
