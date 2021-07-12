@@ -213,16 +213,16 @@ header .menu-icon i {
   z-index: 20;
   overflow-y: none;
   position: fixed;
-  -webkit-backdrop-filter: brightness(0.5);
-          backdrop-filter: brightness(0.5);
+  -webkit-backdrop-filter: brightness(0.8);
+          backdrop-filter: brightness(0.8);
   top: 0;
   left: 0;
 }
 
 .menu-area .wrap {
   background: white;
-  -webkit-box-shadow: 2px -1px 20px 1px #424242;
-          box-shadow: 2px -1px 20px 1px #424242;
+  -webkit-box-shadow: 2px -1px 20px 1px #5e5d5d;
+          box-shadow: 2px -1px 20px 1px #5e5d5d;
   width: 60%;
   height: 100vh;
   padding: 10px;

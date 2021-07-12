@@ -171,12 +171,12 @@ header{
     z-index:20;
     overflow-y: none;
     position: fixed;
-    backdrop-filter: brightness(0.5);
+    backdrop-filter: brightness(0.8);
     top:0;
     left:0;
     .wrap{
         background: white;
-        box-shadow: 2px -1px 20px 1px #424242;
+        box-shadow: 2px -1px 20px 1px #5e5d5d;
         width: 60%;
         height:100vh;
         padding:10px;
