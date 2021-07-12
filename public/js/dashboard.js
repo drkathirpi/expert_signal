@@ -20,4 +20,11 @@ continueButton.addEventListener('click', (e)=>{
 });
 
 
+//handling menu
+const menuButton = document.querySelector('.menu-icon');
+const menuArea = document.querySelector('.menu-area');
+menuButton.addEventListener('click', ()=>{
+  menuArea.style.display = 'block';
+})
+
 
