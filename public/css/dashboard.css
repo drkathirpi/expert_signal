@@ -11,6 +11,7 @@
   -webkit-backdrop-filter: blur(4px) brightness(0.4);
           backdrop-filter: blur(4px) brightness(0.4);
   position: fixed;
+  display: none;
   top: 0px;
   -webkit-transition: 0.2s ease-out;
   transition: 0.2s ease-out;
@@ -246,7 +247,7 @@ header .menu-icon i {
 }
 
 .menu-area .wrap .container .greet h2 {
-  color: #290733;
+  color: #2c3033;
   font-size: 1.4em;
 }
 

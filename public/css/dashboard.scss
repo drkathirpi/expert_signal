@@ -10,6 +10,7 @@
         height:100vh;
         backdrop-filter:blur(4px) brightness(0.4);
         position:fixed;
+        display:none;
         top:0px;
         transition: 0.2s ease-out;
         .wrap{
@@ -192,7 +193,7 @@ header{
               .greet{
                   margin-top:40px;
                   h2{
-                      color:rgb(41, 7, 51);
+                      color:rgb(44, 48, 51);
                       font-size:1.4em;
                   }
               }

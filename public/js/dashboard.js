@@ -1,4 +1,6 @@
-
+window.addEventListener('DOMContentLoaded', ()=>{
+    document.querySelector('.prompt').style.display = "block";
+})
 const freeTrial = document.querySelector('#freeT');
 const conTinue = document.querySelector('#continue');
 freeTrial.addEventListener('click', ()=>{
@@ -27,4 +29,10 @@ menuButton.addEventListener('click', ()=>{
   menuArea.style.display = 'block';
 })
 
+
+this.addEventListener('click', (e)=> {
+    if(e.target.classList.contains('menu-area')){
+        menuArea.style.display = 'none';
+    }
+})
 
