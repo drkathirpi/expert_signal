@@ -206,6 +206,7 @@ header .menu-icon i {
 }
 
 .menu-area {
+  display: none;
   height: 100vh;
   width: 100%;
   z-index: 20;
@@ -227,12 +228,12 @@ header .menu-icon i {
 }
 
 .menu-area .wrap .container {
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 .menu-area .wrap .container .image {
   width: 50%;
-  margin: 30px 0px 10px 0px;
+  margin: 10px 0px 10px 0px;
 }
 
 .menu-area .wrap .container .image img {
@@ -245,7 +246,7 @@ header .menu-icon i {
 }
 
 .menu-area .wrap .container .greet h2 {
-  color: #282a33;
+  color: #290733;
   font-size: 1.4em;
 }
 
@@ -271,15 +272,12 @@ header .menu-icon i {
 
 .menu-area .wrap .container nav ul li i {
   font-size: 1em;
+  color: #e65c00;
 }
 
 .menu-area .wrap .container nav ul li a {
   text-decoration: none;
   color: inherit;
-}
-
-.ri-notification-badge-line {
-  color: orange;
 }
 
 @-webkit-keyframes bg-color {
