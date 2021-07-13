@@ -2,9 +2,7 @@
     margin:0px;
     padding:0px;
     box-sizing: border-box;
-}
-  
-        
+}    
 .prompt{
     z-index: 90;
         height:100vh;
@@ -90,7 +88,7 @@ header{
     .dashboard{
         width:100%;
         animation-name: bg-color;
-        animation-duration: 10s;
+        animation-duration:3s;
         transition:3s ease-in-out;
         animation-direction: normal;
         animation-play-state: running;
@@ -121,15 +119,19 @@ header{
             margin:7% auto;
             height:80vh;
             width: 100%;
-            border-radius: 10px;
             background:#e7e7ec;
         }
     }
     .learn{
         h2{
-            color:rgb(40, 42, 51);
+            color:rgb(67, 73, 73);
             font-size: 1.5em;
             padding:6px;
+            margin-top:25px;
+            i{
+                font-size:1.3em;
+                color:orange;
+            }
         }
         margin:5% auto;
         width:97%;
@@ -163,7 +165,25 @@ header{
         background: linear-gradient(to right, #aa4b6b, #6b6b83, #3b8d99);
      }
 
-       
+.referrals{
+    margin-top:15%;
+    .wrap{
+        height:200px;
+        text-align: center;
+        border-radius: 12px;
+        padding:20px;
+        background-size:100%;
+        background-repeat: no-repeat;
+        background-image: url(https://media3.giphy.com/media/WtUOUPQDNVScjkpvnr/giphy.webp?cid=ecf05e475lkndp4adtquqnwsigv6byhnm58baexqdaenhslu&rid=giphy.webp&ct=g);
+        h2,p{
+         color: white;   
+        }
+        h2{
+            margin-top: 10%;
+        }
+
+    }
+}    
 .menu-area{
     display:none;
        height:100vh;
@@ -221,7 +241,38 @@ header{
         }
     }
 }
-
+.blog-sequels{
+    margin:15% auto;
+    h2{
+        color:rgb(67, 73, 73);
+        font-size: 1.5em;
+        padding:6px;
+        margin-top:25px;
+        i{
+            font-size:1.3em;
+            color:orange;
+        }
+    }
+    .wrap{
+        p{
+            color: rgb(255, 255, 255);
+        }
+        h2{
+            color:white;
+            margin-top:32%;
+        }
+            height:310px;
+            width:100%;
+            margin:1px 0px;
+            border-radius: 4px;
+            padding:30px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: rgb(217, 173, 230);
+            background-blend-mode:darken;
+            background-image:url(https://images.unsplash.com/photo-1554768804-50c1e2b50a6e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8aW52ZXN0fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60);
+    }
+}
 
 
 @keyframes bg-color{
