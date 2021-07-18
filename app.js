@@ -5,11 +5,12 @@ const {config, engine} = require('express-edge');
 const InitiateMongoServer = require('./config/db');
 const index = require('./routes/index');
 const user = require('./routes/user');
+const postSignal = require('./routes/post')
 const port = process.env.PORT || 5000;
 const session = require('express-session');
 const flash = require('connect-flash');
 const passport = require('passport');
-
+const admin = require('./routes/admin')
 var bodyParser = require('body-parser');
 
 require("./config/passport")(passport);
@@ -34,9 +35,11 @@ app.use((req,res,next)=> {
   next();
 })
 
-app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
-app.use('/user', user)
+app.use('/user', user);
+app.use(admin)
+app.use(postSignal)
 
 
 if (process.env.NODE_ENV = "Production" || process.env.NODE_ENV === "staging"){
