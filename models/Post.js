@@ -6,7 +6,7 @@ const SignalSchema = new mongoose.Schema({
          required: true
      },
      signal: {
-         type: String,
+         type: Object,
          required: true
      },
      date:{

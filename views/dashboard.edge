@@ -72,7 +72,16 @@
     <section class="signals">
         <h3>Latest Signals</h3>
         <div class="signal-field">
-
+              @each(post in posts)
+                 <div class="signal-block">
+                     <h2>
+                         {{post.name}}
+                     </h2>
+                     <div class="text">
+                         {{signal}}
+                     </div>
+                 </div>
+              @endeach
         </div>
     </section>
 

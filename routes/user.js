@@ -5,6 +5,7 @@ const User = require('../models/User');
 const { check, validationResult} = require("express-validator");
 const bcrypt = require('bcryptjs');
 const passport = require('passport');
+const displaySignalController = require("../controllers/getSignals")
 require("../config/passport")(passport)
 
 router.get('/signUp', (req, res)=> {
@@ -84,7 +85,7 @@ router.post('/signup',
     })
 });
 
-router.post('/login', (req,res,next)=>{
+router.post('/login',  (req,res,next)=>{
     passport.authenticate('local',{
         successRedirect : '/dashboard',
         failureRedirect: '/user/login',

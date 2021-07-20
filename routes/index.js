@@ -1,17 +1,23 @@
 const express = require("express");
+const { model } = require("mongoose");
 const app = express();
 const router = express.Router();
 const path = require('path');
-const {ensureAuthenticated} = require('../middleware/auth')
+const {ensureAuthenticated} = require('../middleware/auth');
+const Post =  require("../models/Post");
+const {encrypt, decrypt} = require('../config/encrypt')
 
 router.get('/', (req,res)=>{
     res.sendFile(path.resolve('./Pages/index.html'))
 })
 
-router.get('/dashboard', ensureAuthenticated, (req,res)=>{
-    res.render('dashboard', {
-        name : req.user.username,
-    });
+router.get('/dashboard', ensureAuthenticated, async (req,res)=>{
+    const posts = await Post.find({});
+  posts.forEach((item)=> {
+     let signal = decrypt(item.signal);
+     res.render('dashboard', {name : req.user.username, posts, signal});
+  })
+   
     })
 
 module.exports = router;
