@@ -119,9 +119,36 @@ header{
         }
         .signal-field{
             margin:7% auto;
-            height:80vh;
+            height:auto;
             width: 100%;
-            background:#e7e7ec;
+            padding:20px 9px;
+            background:#f5f5fa;
+            border-radius: 20px;
+            .signal-block{
+                margin:9px 0px;
+                padding:9px;
+                border-radius: 4px;
+                 background:rgba(48, 47, 46, 0.747);
+                h2{
+                    color:white;
+                }
+
+                .text{
+                    margin:5px 0px;
+                    p{
+                        font-size: 0.9em;
+                        color:white;
+                    }
+                }
+                .date{
+                    margin:5px 0px;
+                    P{
+                        font-size: 0.8em;
+                        font-style: italic;
+                        color:lightgreen;
+                    }
+                }
+            }
         }
     }
     .learn{
