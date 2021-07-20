@@ -85,12 +85,13 @@ router.post('/signup',
     })
 });
 
-router.post('/login',  (req,res,next)=>{
-    passport.authenticate('local',{
+router.post('/login',  (req,res,next)=> { passport.authenticate('local',
+    {
         successRedirect : '/dashboard',
         failureRedirect: '/user/login',
         failureFlash : true
-    })(req,res,next)
+    })
+    (req,res,next)
 })
 
 router.get('/logout', (req,res)=>{

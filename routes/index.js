@@ -13,11 +13,7 @@ router.get('/', (req,res)=>{
 
 router.get('/dashboard', ensureAuthenticated, async (req,res)=>{
     const posts = await Post.find({});
-  posts.forEach((item)=> {
-     let signal = decrypt(item.signal);
-     res.render('dashboard', {name : req.user.username, posts, signal});
-  })
-   
+     res.render('dashboard', {name : req.user.username, posts, decrypt});
     })
 
 module.exports = router;
