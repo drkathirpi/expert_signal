@@ -128,7 +128,7 @@ header{
                 margin:9px 0px;
                 padding:9px;
                 border-radius: 4px;
-                 background:rgba(48, 47, 46, 0.747);
+                 background:rgba(100, 100, 99, 0.747);
                 h2{
                     color:white;
                 }
@@ -226,7 +226,7 @@ header{
     .wrap{
         background: white;
         box-shadow: 2px -1px 20px 1px #5e5d5d;
-        width: 60%;
+        width: 70%;
         height:100vh;
         padding:10px;
         .container{
@@ -310,9 +310,6 @@ header{
      }
      25%{
         background: linear-gradient(to right, #38ef7d, #11998e);
-     }
-     50%{
-         background:linear-gradient(to right, #cc2b5e, #753a88); ;
      }
      75%{
         background: linear-gradient(to right, #e65c00, #f9d423);

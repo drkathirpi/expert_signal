@@ -164,7 +164,7 @@ header .menu-icon i {
   margin: 9px 0px;
   padding: 9px;
   border-radius: 4px;
-  background: rgba(48, 47, 46, 0.747);
+  background: rgba(100, 100, 99, 0.747);
 }
 
 .block .signals .signal-field .signal-block h2 {
@@ -282,7 +282,7 @@ header .menu-icon i {
   background: white;
   -webkit-box-shadow: 2px -1px 20px 1px #5e5d5d;
           box-shadow: 2px -1px 20px 1px #5e5d5d;
-  width: 60%;
+  width: 70%;
   height: 100vh;
   padding: 10px;
 }
@@ -387,10 +387,6 @@ header .menu-icon i {
     background: -webkit-gradient(linear, left top, right top, from(#38ef7d), to(#11998e));
     background: linear-gradient(to right, #38ef7d, #11998e);
   }
-  50% {
-    background: -webkit-gradient(linear, left top, right top, from(#cc2b5e), to(#753a88));
-    background: linear-gradient(to right, #cc2b5e, #753a88);
-  }
   75% {
     background: -webkit-gradient(linear, left top, right top, from(#e65c00), to(#f9d423));
     background: linear-gradient(to right, #e65c00, #f9d423);
@@ -409,10 +405,6 @@ header .menu-icon i {
   25% {
     background: -webkit-gradient(linear, left top, right top, from(#38ef7d), to(#11998e));
     background: linear-gradient(to right, #38ef7d, #11998e);
-  }
-  50% {
-    background: -webkit-gradient(linear, left top, right top, from(#cc2b5e), to(#753a88));
-    background: linear-gradient(to right, #cc2b5e, #753a88);
   }
   75% {
     background: -webkit-gradient(linear, left top, right top, from(#e65c00), to(#f9d423));

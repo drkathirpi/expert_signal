@@ -74,14 +74,12 @@
         <div class="signal-field">
               @each(post in posts)
                  <div class="signal-block">
-                     <h2>
-                         {{post.name}}
-                     </h2>
+                     <h2>{{post.name}}</h2>
                      <div class="text">
                       <P> {{decrypt(post.signal)}}</p>
                      </div>
                      <div class="date">
-                        <p> {{post.date.toDateString()}}</p>
+                        <p>{{post.date.toDateString()}}</p>
                      </div>
                  </div>
               @endeach
