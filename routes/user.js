@@ -5,7 +5,8 @@ const User = require('../models/User');
 const { check, validationResult} = require("express-validator");
 const bcrypt = require('bcryptjs');
 const passport = require('passport');
-const displaySignalController = require("../controllers/getSignals")
+const {encrypt, decrypt} = require('../config/encrypt')
+const Post =  require("../models/Post");
 require("../config/passport")(passport)
 
 router.get('/signUp', (req, res)=> {
@@ -68,12 +69,14 @@ router.post('/signup',
                 bcrypt.hash(user.password, salt, (err,hash)=>{
                     if(err) throw err;
                     user.password = hash;
-                    user.save((err)=>{
+                  user.save(async (err)=>{
                         if(err) throw err;
                         
-                        else req.flash('success_msg','SignUp successful'); res.render('dashboard', {
+                        else req.flash('success_msg','SignUp successful');   const posts = await Post.find({}); res.render('dashboard', {
                             name: user.username,
-                            from: 'Welcome To Expert Signals'
+                            decrypt,
+                            from: 'Welcome To Expert Signals',
+                            posts
                         })
                     })
                     
