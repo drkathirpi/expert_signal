@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Admin Panel</title>
     <link rel="stylesheet" href="/css/admin.css">
     <link rel="stylesheet" href="/css/dashboard.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -42,6 +43,7 @@
                 <button type="submit">Post signal</button>
                </div>
                
+
             </form>
         </div>
 
@@ -56,6 +58,12 @@
                          </div>
                          <div class="date">
                             <p>{{post.date.toDateString()}}</p>
+                         </div>
+                          <br>
+                         <div class="modify">
+                             <div class="delete">
+                                <i class="ri-delete-bin-line"></i>
+                             </div>
                          </div>
                      </div>
                   @endeach
