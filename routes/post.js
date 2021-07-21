@@ -25,8 +25,12 @@ router.post('/create/signal', (req,res)=>{
                signal: signal_enc
             })
             crypto_signal.save((err)=>{
-               if (err) throw err;
-               res.render('admin', {error: "Signal posted successfully"})
+              if(err){
+                 err.push({msg: "Error in saving" });
+              }
+              else{
+              res.redirect('/auth/admin/expertsignals')
+              }
             })
             
          }

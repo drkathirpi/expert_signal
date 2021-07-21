@@ -12,7 +12,8 @@ router.get('/', (req,res)=>{
 })
 
 router.get('/dashboard', ensureAuthenticated, async (req,res)=>{
-    const posts = await Post.find({});
+    var posts = await Post.find({});
+    posts = posts.reverse();
      res.render('dashboard', {name : req.user.username, posts, decrypt});
     })
 

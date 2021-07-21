@@ -11,7 +11,8 @@ router.get('/auth/admin/expertsignals', (req,res)=>{
 })
 
 router.post('/auth/admin/expertsignals',async (req,res)=>{
-    const posts = await Post.find({});
+    var posts = await Post.find({});
+    posts = posts.reverse();
     if(!req.body.password === 'Beans'){
         res.send('Go back idiot')
     }

@@ -72,7 +72,7 @@ router.post('/signup',
                   user.save(async (err)=>{
                         if(err) throw err;
                         
-                        else req.flash('success_msg','SignUp successful');   const posts = await Post.find({}); res.render('dashboard', {
+                        else req.flash('success_msg','SignUp successful');   var posts = await Post.find({}); posts = posts.reverse(); res.render('dashboard', {
                             name: user.username,
                             decrypt,
                             from: 'Welcome To Expert Signals',
