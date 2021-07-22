@@ -28,7 +28,7 @@
         </div>
         <div class="post">
             <h3>Create Signal</h3>
-            <form action="/create/signal" method="post" enctype="application/json">
+            <form action="/signals/create" method="post" enctype="application/json">
                <div class="name">
                    <label for="name">Header</label><br>
                   <input type="text" name="name" placeholder="Buy or Sell 0r Hodl">
@@ -61,9 +61,12 @@
                          </div>
                           <br>
                          <div class="modify">
-                             <div class="delete">
-                                <i class="ri-delete-bin-line"></i>
-                             </div>
+                             <a href="/signals/delete/{{post._id}}">
+                                <div class="delete">
+                                    <i class="ri-delete-bin-line"></i>
+                                 </div>
+                             </a>
+                             
                          </div>
                      </div>
                   @endeach

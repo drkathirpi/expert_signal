@@ -5,7 +5,6 @@ const {config, engine} = require('express-edge');
 const InitiateMongoServer = require('./config/db');
 const index = require('./routes/index');
 const user = require('./routes/user');
-const postSignal = require('./routes/post')
 const port = process.env.PORT || 5000;
 const session = require('express-session');
 const flash = require('connect-flash');
@@ -39,7 +38,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 app.use('/user', user);
 app.use(admin)
-app.use(postSignal)
+
 
 
 if (process.env.NODE_ENV = "Production" || process.env.NODE_ENV === "staging"){
