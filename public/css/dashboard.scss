@@ -147,6 +147,17 @@ header{
                         color:lightgreen;
                     }
                 }
+                .modify{
+                    a{
+                        text-decoration:none;
+                        .delete{
+                            i{
+                                color:red;
+                                font-size: 1.1em;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
