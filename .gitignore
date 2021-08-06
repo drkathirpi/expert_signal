@@ -1,4 +1,6 @@
 node_modules
 /node_modules
-
+*.css.map
+*.scss
+/public/css/*.css
 ./public/css/main.scss

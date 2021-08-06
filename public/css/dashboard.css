@@ -188,6 +188,15 @@ header .menu-icon i {
   color: lightgreen;
 }
 
+.block .signals .signal-field .signal-block .modify a {
+  text-decoration: none;
+}
+
+.block .signals .signal-field .signal-block .modify a .delete i {
+  color: red;
+  font-size: 1.1em;
+}
+
 .block .learn {
   margin: 5% auto;
   width: 97%;
